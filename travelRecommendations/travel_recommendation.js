@@ -1,8 +1,8 @@
-const addCustomerButton = document.getElementById("addCustomer");
+const addDestinationButton = document.getElementById("addDestination");
 const report = document.getElementById("report");
 const btnSearch = document.getElementById('btnSearch');
 const customer = [];
-function addCustomer() {
+function addDestination () {
     const name = document.getElementById("name").value;
     const gender = document.querySelector('input[name="gender"]:checked');
     const age = document.getElementById("age").value;
@@ -23,20 +23,41 @@ function addCustomer() {
   function generateReport() {
     const numCustomers= customers.length;
     const destinationsCount = {
-      New_York: 0,
-      Los_Angeles: 0,
-      "North_Carolina": 0,
+      Angkor_wat_Cambodia: 0,
+      Bora_Bora_Indonesia: 0,
+      Copacabana_Beach_Brazil: 0, 
+      Kyoto_Japan: 0, 
+      Melbourne_Australia: 0,
+      Rio_de_janeiro_Brazil: 0, 
+      Sao_Paulo_Brazil: 0, 
+      Sydney_Australia: 0, 
+      Taj_Mahal_India; 0, 
+      Tokyo_Japan: 0, 
     };
     const genderConditionsCount = {
       Male: {
-        New_York: 0,
-        Los_Angeles: 0,
-        "North_Carolina": 0,
+        Angkor_wat_Cambodia: 0,
+        Bora_Bora_Indonesia: 0,
+        Copacabana_Beach_Brazil: 0, 
+        Kyoto_Japan: 0, 
+        Melbourne_Australia: 0,
+        Rio_de_janeiro_Brazil: 0, 
+        Sao_Paulo_Brazil: 0, 
+        Sydney_Australia: 0, 
+        Taj_Mahal_India; 0, 
+        Tokyo_Japan: 0, 
       },
       Female: {
-        New_York: 0,
-        Los_Angeles: 0,
-        "North Carolina": 0,
+        Angkor_wat_Cambodia: 0,
+      Bora_Bora_Indonesia: 0,
+      Copacabana_Beach_Brazil: 0, 
+      Kyoto_Japan: 0, 
+      Melbourne_Australia: 0,
+      Rio_de_janeiro_Brazil: 0, 
+      Sao_Paulo_Brazil: 0, 
+      Sydney_Australia: 0, 
+      Taj_Mahal_India; 0, 
+      Tokyo_Japan: 0, 
       },
     };
 
